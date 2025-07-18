@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Hotel D'Ben Purwokerto</title>
+
+  <script src="https://cdn.tailwindcss.com">
+</script>
+
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;600&display=swap');
+
+
+    body {
+
+      font-family: 'Poppins', sans-serif;
+      background:#ffb405;
+
+      min-height: 100vh;
+
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: flex-start;
+
+      align-items: center;
+
+      padding: 2rem 1rem;
+
+      color: #3b3a30;
+
+    }
+
+    h1 {
+
+      font-family: 'Poppins', sans-serif;
+      font-size: 3rem;
+
+      color: #2c3e50;
+
+      letter-spacing: 0.05em;
+
+    }
+
+    h2 {
+
+      font-weight: 600;
+
+      color: #34495e;
+
+    }
+
+    .logo {
+
+      max-width: 150px;
+
+      filter: drop-shadow(0 0 5px #3b3a30aa);
+
+    }
+
+    .header-info {
+
+      max-width: 600px;
+
+      text-align: center;
+
+      margin-top: 0.5rem;
+
+      font-weight: 600;
+
+      letter-spacing: 0.03em;
+
+    }
+
+    .tagline {
+
+      font-family: 'Great Vibes', cursive;
+
+      font-size: 3rem;
+
+      margin-top: 1rem;
+
+      color: #7b6f3e;
+
+      font-weight: 400;
+
+      text-shadow: 1px 1px 2px #ab9e5f99;
+
+    }
+
+
+    .cards {
+
+      display: grid;
+
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+
+      gap: 1.5rem;
+
+      margin: 2rem 0;
+
+      max-width: 960px;
+
+      width: 100%;
+
+    }
+
+    article.card {
+
+      background: #fffdfa95;
+
+      border-radius: 12px;
+
+      box-shadow: 0 8px 12px #cec8a677;
+
+      padding: 1rem;
+
+      font-weight: 500;
+
+      color: #3f3f3f;
+
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+    }
+
+    article.card:hover {
+
+      box-shadow: 0 12px 20px #b7ad7ebb;
+
+      transform: translateY(-6px);
+
+    }
+ 
+   article.card img {
+
+      border-radius: 10px;
+
+      max-width: 100%;
+
+      object-fit: cover;
+
+      height: 180px;
+
+      box-shadow: inset 0 0 20px #eee;
+
+      margin-bottom: 1rem;
+
+    }
+
+    article.card p {
+
+      font-size: 1.3rem;
+
+      line-height: 1.4;
+
+      text-align: center
+;
+    }
+
+    .facilities {
+
+      margin: 2rem 0 3rem;
+
+      font-weight: 600;
+
+      font-size: 1.2rem;
+
+      color: #50491f;
+
+      text-align: center;
+
+      letter-spacing: 0.02em;
+
+    }
+
+
+    .contact-info {
+
+      background: #f3ecd8e8;
+
+      max-width: 600px;
+
+      padding: 1.5rem 2rem;
+
+      border-radius: 14px;
+
+      box-shadow: 0 3px 5px #b1a96888;
+
+      font-weight: 600;
+
+      font-size: 1.3rem;
+      color: #4a4a24;
+
+      margin-bottom: 2rem;
+
+    }
+
+    .contact-info span {
+      font-weight: 700;
+
+      color: #3b3a1e;
+
+    }
+
+
+    .map-container {
+
+      max-width: 600px;
+
+      border-radius: 12px;
+
+      overflow: hidden;
+
+      box-shadow: 0 8px 14px #a19d7566;
+
+      margin-bottom: 3rem;
+
+    }
+
+    .map-container img {
+
+      width: 100%;
+
+      height: auto;
+
+      object-fit: cover;
+
+      display: block;
+
+    }
+
+
+    footer {
+
+      font-style: italic;
+
+      color: #5a5533;
+
+      font-weight: 500;
+
+      font-size: 0.85rem;
+ 
+     margin-top: auto;
+
+    }
+
+
+    @media (max-width: 460px) {
+
+      h1 {
+
+        font-size: 2.3rem;
+
+      }
+
+      .tagline {
+
+        font-size: 1.4rem;
+
+      }
+
+      .contact-info {
+
+        padding: 1rem 1.2rem;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header class="flex flex-col items-center">
+
+    <img src="logo.png"/>
+
+    <h1>HOTEL D'BEN</h1>
+
+    <p class="header-info">
+
+      Jl. Kranji No. 60 Purwokerto 53116 <br />
+
+      Telp. (0281) 6510168, 6510068, 6510199 - Mobile 081325394900 <br />
+
+      Email: <a href="mailto:dbenhotel@gmail.com" class="text-blue-700 underline">dbenhotel@gmail.com</a> <br />
+
+      Web: <a href="http://www.dbenhotel.com" target="_blank" class="text-blue-700 underline">www.dbenhotel.com</a>
+
+    </p>
+
+    <p class="tagline">Rest, Relax and Joyful</p>
+
+  </header>
+
+
+  <section class="cards" aria-label="Gallery of hotel rooms and facilities">
+
+    <article class="card" tabindex="0">
+
+      <img src="single-bed.jpg"/>
+
+      <p>Double Bed</p>
+
+    </article>
+
+    <article class="card" tabindex="0">
+
+      <img src="double-bed.jpg"/>
+
+      <p>Twin Bed </p>
+
+    </article>
+
+    <article class="card" tabindex="0">
+
+      <img src="bf room.jpg"/>
+
+      <p>Ruang Makan dan Ruang Meeting </p>
+
+    </article>
+
+    <article class="card" tabindex="0">
+
+      <img src="lobby.jpg"/>
+
+      <p>Lobby Hotel .</p>
+
+    </article>
+
+      </section>
+
+
+  <p class="facilities" aria-label="List of hotel facilities">
+
+    Facilities: Breakfast, LCD TV, AC, Hot/Cold Water, WiFi Hotspot, Meeting Room, Parkir Luas.
+
+ </p>
+ <section class="contact-info" aria-label="Contact information of Hotel D'Ben">
+
+    <p><span>Weekdays:</span> Rp285.000</p>
+
+    <p><span>Weekend:</span> Rp300.000</p>
+
+    <p><span>*Tambahan Deposit Kunci:</span> Rp50.000</p>
+
+      </section>
+
+
+  <div class="map-container" aria-label="Location map of Hotel D'Ben in Purwokerto">
+
+    <iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.373467485819!2d109.23473369999999!3d-7.423856300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655e62315d11bf%3A0x1c0ccf1b71504907!2sHotel%20D&#39;Ben%20Purwokerto!5e0!3m2!1sid!2sid!4v1752465472531!5m2!1sid!2sid"
+				width="600"
+				height="450"
+				style="border: 0"
+				allowfullscreen=""
+				loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"
+			></iframe>
+  </div>
+
+
+ 
+  <footer>
+
+    &copy; 2025 Hotel D'Ben - Rest, Relax and Joyful
+
+  </footer>
+
+</body>
+
+</html>
+
